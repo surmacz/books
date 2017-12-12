@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript books</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <div class="square"></div>
+      <div class="title">Javascript books</div>
+    </header>
+    <aside>
+      <div class="sort">
+        <h2>Sort by</h2>
+        <ul>
+          <li><label><input name="sort" type="radio" value="1">pages</label></li>
+          <li><label><input name="sort" type="radio" value="2">release date</label></li>
+          <li><label><input name="sort" type="radio" value="3">author's last name</label></li>
+        </ul>
+      </div>
+      <div class="filter">
+        <h2>Show only</h2>
+        <ul>
+          <li>Above<input type="number" min="0">pages</li>
+        </ul>
+      </div>
+      <button>Clear</button>
+    </aside>
+    <main>
+      <ol></ol>
+    </main>
+    <footer></footer>
+    <div class="popup">
+      <div>
+        <img src="">
+        <div class="close"></div>
+      </div>
+    </div>
+    <template>
+      <div class="pic">
+        <img src="" data-large="">
+      </div>
+      <div class="book-data">
+        <div class="title"></div>
+        <div class="spacer"></div>
+        <div class="author"></div>
+        <div class="table">
+          <div class="row">
+            <div class="cell">Release Date:</div>
+            <div class="release-date cell"></div>
+          </div>
+          <div class="row">
+            <div class="cell">Pages:</div>
+            <div class="pages cell"></div>
+          </div>
+          <div class="row">
+            <div class="cell">Link:</div>
+            <div class="cell"><a href="" class="link">shop</a></div>
+          </div>
+        </div>
+      </div>
+    </template>
+    <script src="js/main.js" type="module"></script>
+  </body>
+</html>
