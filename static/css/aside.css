@@ -1,0 +1,51 @@
+.sort, .filter {
+  padding: 10px 20px 0;
+}
+
+.filter input {
+  width: 50px;
+  margin: 0 5px;
+}
+
+.sort h2, .filter h2 {
+  margin: 0;
+}
+.sort ul, .filter ul {
+  margin: 0;
+  padding: 10px;
+  border-bottom: #cdcdcd solid;
+  border-width: 1px;
+}
+
+aside {
+  overflow: hidden;
+}
+
+aside > button {
+  padding: 10px;
+  display: table;
+  margin: 10px auto;
+  text-align: center;
+  background-color: #aaaaaa;
+  color: white;
+  border: 0;
+  border-radius: 5px;
+}
+
+aside > button:active {
+  transform: scale(0.9);
+  transition: all 100ms ease-in;
+}
+
+aside ul {
+  list-style: none;
+}
+
+
+@media all and (min-width: 761px) {
+  aside {
+    position: fixed;
+    top: 100px;
+    width: 220px;
+  }
+}

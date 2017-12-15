@@ -1,0 +1,60 @@
+.book-data {
+  align-self: center;
+  animation: appear 200ms ease-in;
+}
+.book-data .title {
+  font-size: 1.1em;
+  font-weight: bold;
+}
+
+.book-data .spacer {
+  width: 40px;
+  height: 2px;
+  background-color: #eb3324;
+  margin: 10px auto;
+}
+
+.book-data .author {
+  font-style: italic;
+}
+
+.book-data .author:before {
+  content: 'By ';
+}
+
+.book-data .table {
+  display: table;
+  margin: 0 auto;
+  border-spacing: 3px;
+  padding-top: 10px;
+  font-style: italic;
+  color: #999999;
+}
+.book-data .table .row {
+  display: table-row;
+}
+
+.book-data .table .row .cell {
+  display: table-cell;
+}
+
+.book-data .table .row .cell:nth-child(1) {
+  text-align: right;
+}
+.book-data .table .row .cell:nth-child(2) {
+  text-align: left;
+}
+.book-data .link {
+  color: #eb3324;
+  text-decoration: underline;
+  text-decoration-style: dashed;
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

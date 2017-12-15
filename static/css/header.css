@@ -1,0 +1,39 @@
+header {
+  top: 0;
+  margin: 0;
+  width: 100%;
+  overflow: hidden;
+  background-color: #eeeeee;
+  height: 94px;
+  opacity: 0.98;
+  z-index: 2;
+}
+
+header .square {
+  position: relative;
+  top: 0.6em;
+  left: 1em;
+  width: 2.9em;
+  height: 2.9em;
+  background-color: #fad84a;
+  z-index: 3;
+}
+
+header .title {
+  position: relative;
+  width: 100%;
+  font-size: 2em;
+  font-weight: bold;
+  line-height: 54px;
+  border-bottom: #cdcdcd dashed;
+  border-width: 1px;
+  padding: 20px 30px;
+  top: -1.5em;
+  z-index: 4;
+}
+
+@media all and (min-width: 761px) {
+  header {
+    position: fixed;
+  }
+}

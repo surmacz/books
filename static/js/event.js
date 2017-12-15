@@ -68,6 +68,6 @@ export class Event {
 
   refresh() {
     this.session.save();
-    this.data.refresh();
+    this.data.load();
   }
 }
